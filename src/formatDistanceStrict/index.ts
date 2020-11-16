@@ -161,7 +161,7 @@ const MINUTES_IN_YEAR = 525600
  * //=> '1 jaro'
  */
 
-interface Options {
+export interface Options {
   addSuffix?: boolean
   unit?: 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year'
   roundingMethod?: 'floor' | 'ceil' | 'round'
