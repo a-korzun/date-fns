@@ -1,4 +1,4 @@
-import distanceInStrictWords from '../formatDistanceStrict/index'
+import distanceInStrictWords, { Options } from '../formatDistanceStrict/index'
 import requiredArgs from '../_lib/requiredArgs/index'
 
 /**
@@ -75,7 +75,7 @@ import requiredArgs from '../_lib/requiredArgs/index'
  * )
  * //=> '1 jaro'
  */
-export default function formatDistanceToNowStrict(dirtyDate, dirtyOptions) {
+export default function formatDistanceToNowStrict(dirtyDate: Date | number, dirtyOptions?: Options) {
   requiredArgs(1, arguments)
 
   return distanceInStrictWords(dirtyDate, Date.now(), dirtyOptions)
